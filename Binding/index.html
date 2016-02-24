@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binding</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.css">
+</head>
+<body>
+
+<div ng-app="">
+<input type="text" ng-model="data.message">
+	<h1>{{data.message}}</h1>
+	<div class="{{data.message}}">
+		Wrapped in foundation component
+	</div>
+</div> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+</body>
+</html>
